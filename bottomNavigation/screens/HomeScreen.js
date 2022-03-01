@@ -2,14 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View , ImageBackground ,SafeAreaView} from 'react-native';
 
 
-const PrivateBackgroundImage = {uri : "https://i.pinimg.com/736x/18/6b/ca/186bca69d08d7d6c7a7eacad66274e57.jpg"};
+const PrivateBackgroundImage = {uri : "https://images.unsplash.com/photo-1610987039121-d70917dcc6f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"};
 
 export default function HomeScreen() {
   return (
       <ImageBackground 
-      source={PrivateBackgroundImage} resizeMode='cover' style={styles.backGroundImagePersonal}>
+      source={PrivateBackgroundImage} resizeMode='stretch' style={styles.backGroundImagePersonal}>
             <SafeAreaView style={styles.container}>
-            <Text style={styles.text}>Home Screen</Text>
+            
         </SafeAreaView>
       </ImageBackground>
     
@@ -24,11 +24,13 @@ const styles = StyleSheet.create({
   },
   backGroundImagePersonal:{
     flex: 1,
-    justifyContent: "center"
+    justifyContent: "center",
+    
   },
   text: {
     color: "white",
     fontSize: 42,
+    
     fontWeight: "bold",
     textAlign: "center",
     backgroundColor: "#000000c0",
