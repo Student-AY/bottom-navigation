@@ -13,6 +13,7 @@ const Tabs = () => {
         <Tab.Navigator
         screenOptions={{
             tabBarShowLabel:false,
+            headerTitleAlign:'center',
             tabBarStyle:{backgroundColor:'cyan' , margin:15 , shadowColor:'black',borderRadius:15},
         }}
         >
